@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A surpresa</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #000000, #001b3d, #000000);
+      color: white;
+    }
+
+    .container {
+      width: min(90%, 600px);
+      text-align: center;
+      padding: 35px 25px;
+    }
+
+    .foto-surpresa {
+      width: 100%;
+      max-width: 420px;
+      height: 350px;
+      object-fit: cover;
+      border-radius: 20px;
+      border: 3px solid #1685f8;
+      box-shadow: 0 0 35px rgba(22, 133, 248, 0.65);
+    }
+
+    p {
+      margin-top: 24px;
+      font-size: clamp(1.5rem, 5vw, 2.4rem);
+      font-weight: bold;
+      color: #4db1ff;
+      text-shadow: 0 0 12px #1685f8;
+    }
+  </style>
+</head>
+
+<body>
+  <main class="container">
+    <!-- Troque o link pela foto final desejada -->
+    <img
+      class="foto-surpresa"
+      src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=700&q=80"
+      alt="Foto da surpresa"
+    />
+
+    <p>além de besta é curioso 😂</p>
+  </main>
+</body>
+</html>
