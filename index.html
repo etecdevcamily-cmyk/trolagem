@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Uma surpresa</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, sans-serif;
+      color: white;
+      background: radial-gradient(circle, #07356d 0%, #020814 55%, #000 100%);
+    }
+
+    .container {
+      width: min(90%, 500px);
+      padding: 40px 25px;
+      text-align: center;
+      background: rgba(0, 22, 50, 0.75);
+      border: 1px solid #1d76d2;
+      border-radius: 22px;
+      box-shadow: 0 0 30px rgba(0, 119, 255, 0.35);
+    }
+
+    h1 {
+      margin-bottom: 28px;
+      font-size: clamp(1.7rem, 5vw, 2.4rem);
+    }
+
+    .foto {
+      width: 100%;
+      max-width: 340px;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 16px;
+      border: 3px solid #1678db;
+      margin-bottom: 28px;
+    }
+
+    button {
+      padding: 15px 34px;
+      border: none;
+      border-radius: 30px;
+      background: #0879e8;
+      color: white;
+      font-size: 1.1rem;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0 0 18px #0879e8;
+      animation: pulsar 1.4s infinite;
+      transition: 0.25s;
+    }
+
+    button:hover {
+      background: #32a0ff;
+      transform: scale(1.08);
+    }
+
+    @keyframes pulsar {
+      0%, 100% {
+        transform: scale(1);
+        box-shadow: 0 0 12px #0879e8;
+      }
+
+      50% {
+        transform: scale(1.08);
+        box-shadow: 0 0 30px #30a3ff;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="container">
+    <h1>Clique abaixo para ver a surpresa</h1>
+
+    <!-- Troque o link pela imagem que quiser -->
+    <img
+      class="foto"
+      src="c:\Users\infonoite\Downloads\13a8aa0571337b9b951bc6e58d9292bd.jpg"
+      alt="Imagem da surpresa"
+    />
+
+    <button onclick="window.location.href='surpresa.html'">
+      Ver surpresa
+    </button>
+  </main>
+</body>
+</html>
